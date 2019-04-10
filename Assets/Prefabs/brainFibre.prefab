@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5350040291472446803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5350040291472446766}
+  - component: {fileID: 5350040291472446801}
+  - component: {fileID: 5350040291472446800}
+  m_Layer: 0
+  m_Name: brainFibre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5350040291472446766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350040291472446803}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6157681, y: -0.7199514, z: 0.047683112}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_Children:
+  - {fileID: 5350040292504593355}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5350040291472446801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350040291472446803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8884c0961759c6940875bf6a0bd1618c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: 
+  visit: 
+  lineObj: {fileID: 1365265917305309989, guid: 238ad58f6d85f804c9dd95e384c3ba05, type: 3}
+  lineParent: {fileID: 5350040292504593355}
+  r:
+    lineOffsets: []
+    lineLengths: []
+    x: []
+    y: []
+    z: []
+    regionName: 
+  lines: []
+  min: {x: Infinity, y: Infinity, z: Infinity}
+  max: {x: -Infinity, y: -Infinity, z: -Infinity}
+  Diameter: 0
+  center: {x: 0, y: 0, z: 0}
+--- !u!114 &5350040291472446800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350040291472446803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a435d496ade019b4c970d71c4edd6099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r: {fileID: 5350040291472446801}
+  controllers: []
+  controllerEvents: []
+  start:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  current:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  active: 000000
+  startPos: {x: 0, y: 0, z: 0}
+  startRot: {x: 0, y: 0, z: 0, w: 0}
+  startScale: {x: 0, y: 0, z: 0}
+  startOffset: {x: 0, y: 0, z: 0}
+--- !u!1 &5350040292504593354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5350040292504593355}
+  m_Layer: 0
+  m_Name: Lines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5350040292504593355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350040292504593354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5350040291472446766}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

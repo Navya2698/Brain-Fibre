@@ -112,36 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &308710948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 308710949}
-  m_Layer: 0
-  m_Name: Lines
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &308710949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308710948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1369176256}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &637283337
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +193,7 @@ Transform:
   - {fileID: 1038088757}
   - {fileID: 764521235}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &668679655
 PrefabInstance:
@@ -461,9 +431,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f3c6e05cb807340940e608485d990e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mnScript: {fileID: 1369176254}
+  mnScript: {fileID: 0}
   device: 1
   active: 0
+--- !u!1 &920265547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920265549}
+  - component: {fileID: 920265548}
+  m_Layer: 0
+  m_Name: Brain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &920265548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920265547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0e27cea093ee24abd8e5c17ac2fc56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noOfRegions: 0
+  fibreObj: {fileID: 5350040291472446803, guid: f345c3b144b860a4395058831384daff,
+    type: 3}
+  fibreParent: {fileID: 920265549}
+--- !u!4 &920265549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920265547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6157681, y: 0.7199514, z: -0.047683112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1038088756
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f3c6e05cb807340940e608485d990e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mnScript: {fileID: 1369176254}
+  mnScript: {fileID: 0}
   device: 0
   active: 0
 --- !u!1 &1041334547
@@ -611,93 +628,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1369176253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1369176256}
-  - component: {fileID: 1369176255}
-  - component: {fileID: 1369176254}
-  m_Layer: 0
-  m_Name: Brain Fibre
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1369176254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369176253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a435d496ade019b4c970d71c4edd6099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  r: {fileID: 1369176255}
-  controllers: []
-  controllerEvents: []
-  start:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  current:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  active: 000000
-  startPos: {x: 0, y: 0, z: 0}
-  startRot: {x: 0, y: 0, z: 0, w: 0}
-  startScale: {x: 0, y: 0, z: 0}
-  startOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1369176255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369176253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8884c0961759c6940875bf6a0bd1618c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fileName: 2012-06-13_Accumbens.json
-  visit: 
-  lineObj: {fileID: 1365265917305309989, guid: 238ad58f6d85f804c9dd95e384c3ba05, type: 3}
-  lineParent: {fileID: 308710949}
-  r:
-    lineOffsets: []
-    lineLengths: []
-    x: []
-    y: []
-    z: []
-    regionName: 
-  lines: []
-  min: {x: Infinity, y: Infinity, z: Infinity}
-  max: {x: -Infinity, y: -Infinity, z: -Infinity}
-  Diameter: 0
-  center: {x: 0, y: 0, z: 0}
---- !u!4 &1369176256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369176253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
-  m_Children:
-  - {fileID: 308710949}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -17,16 +17,11 @@ public class Region_Loader : MonoBehaviour
     public Vector3 max = new Vector3(-Mathf.Infinity, -Mathf.Infinity, -Mathf.Infinity);
     public float Diameter;
     public Vector3 center;
-    void Update()
+    void Start()
     {
-        
-        
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Debug.Log("Loading Region: " + fileName);
-            r = readFile();
-            instantiateObjects(r);
-        }
+        Debug.Log("Loading Region: " + fileName);
+        r = readFile();
+        instantiateObjects(r);
     }
 
     Region readFile()
